@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+    background-color: black;
+    height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 85%;
+    padding: 6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.dash-board_img img {
+    width: 20rem;
+}
+
+h1 {
+    font-weight: 200;
+    color: hsl(0, 0%, 59%);
+    font-size: 3rem;
+}
+
+.soon {
+    font-weight: 700;
+    color: black;
+}
+
+footer {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}

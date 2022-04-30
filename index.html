@@ -5,34 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/010679bc69.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
   <title>Ping coming soon page</title>
 </head>
+
 <body>
-  
-  <header>
+
+
+
+
+
+  <main class="main">
     <div class="logo">
       <img src="images/logo.svg" alt="">
     </div>
-    <h1> We are launching soon!</h1>
+    <h1>We are launching <span class="soon">soon!</span></h1>
     <div class="sub-text">Subscribe and get notified</div>
-
-  </header>
-
-  <main>
-
 
 
     <form action="">
       <input class="email-input" type="email" placeholder="Your email address...">
     </form>
-    <button class="notify"></button>
+    <button class="notify">Notify Me</button>
     <div class="dash-board_img">
-      <img src="images/illustration-dashboard.png" alt="">
+      <img src="images/illustration-dashboard.png" alt="dashboard illustration">
     </div>
     <div class="bottom-icons">
-
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+    <div class="bottom-text">
+      <p>&copy; Copyright Ping. All rights reserved.</p>
     </div>
 
   </main>
@@ -44,9 +52,7 @@
 
 
 
-  Notify Me
 
-  &copy; Copyright Ping. All rights reserved.
 
 
 
@@ -56,7 +62,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Piotr Prus</a>.
     </p>
   </footer>
 </body>
