@@ -35,11 +35,11 @@ body {
 }
 
 .logo {
-    margin-bottom: 2.5rem;
+	margin-bottom: 2.5rem;
 }
 
 .sub-text {
-	margin-top: .7rem;
+	margin-top: 0.7rem;
 }
 
 .email-input {
@@ -47,31 +47,30 @@ body {
 	height: 3rem;
 	border-radius: 25px;
 	border: 1px solid rgba(0, 0, 0, 0.133);
-    padding: 1.5rem;
-    font-size: 15px;
-    
+	padding: 1.5rem;
+	font-size: 15px;
 }
 
 ::placeholder {
-    color: rgba(0, 0, 0, 0.212);
-  }
+	color: rgba(0, 0, 0, 0.212);
+}
 
 .btn {
 	padding: 10px;
 	width: 11rem;
 	margin-left: 1rem;
-    border-radius: 25px;
-    border: none;
-    background-color: hsl(223, 87%, 63%);
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
+	border-radius: 25px;
+	border: none;
+	background-color: hsl(223, 87%, 63%);
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
 	z-index: 0;
-	transition: background-color .3s;
+	transition: background-color 0.3s;
 }
 
 .btn:hover {
-	background-color: hsla(223, 87%, 63%, .8);
+	background-color: hsla(223, 87%, 63%, 0.8);
 }
 
 .form-box {
@@ -91,13 +90,11 @@ body {
 	font-size: 12px;
 	font-weight: bold;
 	font-style: italic;
-
-	
 }
 
 .dash-board_img img {
 	width: 600px;
-    margin-top: 5rem;
+	margin-top: 5rem;
 	bottom: 0;
 	z-index: -10;
 }
@@ -113,38 +110,35 @@ h1 {
 	color: black;
 }
 
-.bottom-icons{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
-    color: hsl(223, 87%, 63%);
-    width: 120px;
-	
+.bottom-icons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+	color: hsl(223, 87%, 63%);
+	width: 120px;
 }
-
 
 .fa-brands {
 	display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 27px;
-    border: 1px solid rgba(0, 0, 0, 0.171);
-    border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 27px;
+	border: 1px solid rgba(0, 0, 0, 0.171);
+	border-radius: 50%;
 	cursor: pointer;
-	transition: background-color .3s, color .3s;
+	transition: background-color 0.3s, color 0.3s;
 }
 
 .fa-brands:hover {
-	background-color:  hsl(223, 87%, 63%);
+	background-color: hsl(223, 87%, 63%);
 	color: white;
 }
 
-
 .bottom-text {
-    margin-top: .5rem;
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.571);
+	margin-top: 0.5rem;
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.571);
 }
 
 .active {
@@ -155,11 +149,60 @@ h1 {
 	border: 1px solid rgba(255, 0, 0, 0.301);
 }
 
-
 footer {
-    display: none;
+	display: none;
 	position: absolute;
 	left: 50%;
 	bottom: 0;
 	transform: translate(-50%, 0);
+}
+
+@media (max-width: 375px) {
+	.main {
+		width: 350px;
+		padding: 6rem 2rem 3rem 2rem;
+	}
+
+	h1 {
+		font-size: 25px;
+		text-align: center;
+	}
+	.form-box {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.email-input {
+		width: 286px;
+		margin-bottom: 3rem;
+	}
+
+	.btn {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		height: 3rem;
+	}
+	.sub-text {
+		margin-top: 1.5rem;
+	}
+
+	.warning {
+		top: 60px;
+	}
+	.box {
+		width: 100%;
+	}
+	.dash-board_img {
+		width: 320px;
+	}
+	.dash-board_img img {
+		width: 100%;
+	}
+
+	.bottom-icons {
+		margin-top: 5rem;
+	}
 }
