@@ -26,6 +26,34 @@ body {
     background-color: white;
 }
 
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+}
+
+.email-input {
+    width: 20rem;
+    height: 3rem;
+
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+.btn {
+    width: 5rem;
+    margin-left: 1rem;
+    
+}
+
+.form-box {
+    display: flex;
+    flex-direction: row;
+}
+
 .dash-board_img img {
     width: 20rem;
 }
