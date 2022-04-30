@@ -16,8 +16,8 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	height: 100%;
-	width: 70%;
+	height: 900px;
+	width: 1300px;
 	padding: 6rem;
 	top: 50%;
 	left: 50%;
@@ -26,6 +26,7 @@ body {
 }
 
 .box {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -35,6 +36,10 @@ body {
 
 .logo {
     margin-bottom: 2.5rem;
+}
+
+.sub-text {
+	margin-top: .7rem;
 }
 
 .email-input {
@@ -52,6 +57,7 @@ body {
   }
 
 .btn {
+	padding: 10px;
 	width: 11rem;
 	margin-left: 1rem;
     border-radius: 25px;
@@ -60,17 +66,40 @@ body {
     color: white;
     font-size: 14px;
     cursor: pointer;
+	z-index: 0;
+	transition: background-color .3s;
+}
+
+.btn:hover {
+	background-color: hsla(223, 87%, 63%, .8);
 }
 
 .form-box {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	margin-top: 2rem;
+	height: 200px;
+}
+
+.warning {
+	visibility: hidden;
+	position: absolute;
+	color: rgba(255, 0, 0, 0.459);
+	bottom: -20px;
+	left: 20px;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+
+	
 }
 
 .dash-board_img img {
 	width: 600px;
-    margin-top: 3rem;
+    margin-top: 5rem;
+	bottom: 0;
+	z-index: -10;
 }
 
 h1 {
@@ -87,14 +116,15 @@ h1 {
 .bottom-icons{
     display: flex;
     justify-content: space-between;
-    margin-top: 5rem;
+    margin-top: 3rem;
     color: hsl(223, 87%, 63%);
     width: 120px;
 	
 }
 
+
 .fa-brands {
-    display: flex;
+	display: flex;
     justify-content: center;
     align-items: center;
     width: 30px;
@@ -102,18 +132,29 @@ h1 {
     border: 1px solid rgba(0, 0, 0, 0.171);
     border-radius: 50%;
 	cursor: pointer;
+	transition: background-color .3s, color .3s;
 }
 
-i {
-    width: 2;
-    height: 2px;
+.fa-brands:hover {
+	background-color:  hsl(223, 87%, 63%);
+	color: white;
 }
+
 
 .bottom-text {
-    margin-top: 2rem;
+    margin-top: .5rem;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.571);
 }
+
+.active {
+	visibility: visible;
+}
+
+.border-red {
+	border: 1px solid rgba(255, 0, 0, 0.301);
+}
+
 
 footer {
     display: none;
